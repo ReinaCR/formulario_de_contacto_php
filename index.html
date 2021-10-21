@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <title>Evidencia E2 UF1845 - Contacto</title>
+
+        <meta name="author" content="Yo">
+        <meta name="description" content="Esta es una pagina muy bonita que trata sobre php">
+        <meta name='keywords' content='html php curso variables'>
+
+        <link rel="shortcut icon" type="image/x-icon" href="logoweb.ico.png">
+        <link rel="stylesheet" type="text/css" href="miestilo.css">
+
+    </head>
+    <body>
+        <noscript>
+            <h3>!! Para poder ver esta pagina de manera correcta se necesita tener habilitado JavaScript!!</h3>
+        </noscript>
+        <header>
+            <h1 id="mih1">Evidencia E2 UF1845</h1>
+        </header>
+        <section > 
+            <h1>Contacta con nosotros</h1>
+            <div>
+                <label id="label">Usuario:<span>*</span></label>
+                    <input type='text' name='user' id='user'size="40" maxlength="10" placeholder="Escriba su nombre de usario" required pattern="^([a-z]|[A-Z]|[0-9])*">                      
+                <br>
+                <label id="label" >Correo:<span>*</span></label>
+                    <input type='email' name='mail' id='mail' size="40" placeholder="sucorreo@aqui.com" required pattern="^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$">
+                <br>
+                <label id="label" >Comentario:</label>
+                    <input type="text" placeholder="Si desea escribir algún comentario, hágalo aquí" id='coment' size="40" name="coment">
+                <br><br>
+                <input type="checkbox" required name="PPD"><span>*</span>Acepto y Confirmo la Política de Privacidad.<br><br>
+                <input type='submit' value='Contactar' id="submit" name="enviar" onclick="ajax_post()">
+            </div>        
+            <p id='salida'></p>
+        </section>
+        <footer class='footer'>
+            <p>Hecho por Noelia - Octubre 2021</p>
+        </footer>
+        <script src="LoginAjax.js"></script>
+</body>
+</html>
